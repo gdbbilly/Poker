@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Poker
 {
-    class Player
+    public class Player
     {
 
         private List<Card> card = new List<Card>();

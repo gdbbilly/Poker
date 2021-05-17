@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Poker
 {
-    enum eRanking
+    public enum eRanking
     {
         HIGH_CARD,
         PAIR,

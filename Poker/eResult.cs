@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Poker
 {
-    enum eResult
+    public enum eResult
     {
         BlackWin,
         WhiteWin,

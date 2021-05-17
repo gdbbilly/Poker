@@ -4,15 +4,18 @@ using System.Text;
 
 namespace Poker
 {
-    static class CompareHands
+    public static class CompareHands
     {
         public static eResult Compare(Player WhitePlayer, Player BlackPlayer)
         {
-            if (WhitePlayer.Rank() > BlackPlayer.Rank())
+            var whitePlayerRank = WhitePlayer.Rank();
+            var blackPlayerRank = BlackPlayer.Rank();
+
+            if (whitePlayerRank > blackPlayerRank)
             {
                 return eResult.WhiteWin;
             }
-            if (WhitePlayer.Rank() < BlackPlayer.Rank())
+            if (whitePlayerRank < blackPlayerRank)
             {
                 return eResult.BlackWin;
             }
